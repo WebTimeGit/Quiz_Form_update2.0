@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz form valid</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <a href="#" class="btn" data-trigger-modal="btn_modal" data-label-modal="modal1">modal 1</a>
+
+    <div class="modal_mainWr" id="modal1" data-modal="modal">
+        <div class="modal_content" data-important="true">
+            <button type="button" class="closeMode" data-close="modal">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="modal_item">
+                <form action="" method="post" class="quiz_form">
+                    <div class="modal_item-header">
+                        <h2>Пошаговая форма<span class="contQ">
+                                <span class="currentQ">1</span>/<span class="allQ">0</span>
+                            </span>
+                        </h2>
+
+                        <div class="progress_bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="modal_item-body">
+
+                        <div class="quiz_blockWr">
+                            <div class="quiz_block active">
+                                <label for="data1">
+                                    <h2 class="title_element">Ваше имя</h2>
+                                    <input type="text" placeholder="Ваше имя" name="name" id="data1" class="input_frm">
+                                </label>
+                            </div>
+                            <div class="quiz_block">
+                                <label for="select">
+                                    <h2 class="title_element">Ваш возраст</h2>
+                                    <select id="select" class="select">
+                                        <option value="age0" selected>Выбрать</option>
+                                        <option value="age1">18-25</option>
+                                        <option value="age2">26-40</option>
+                                        <option value="age3">41+</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="quiz_block">
+                                <h2 class="title_element">Ваш пол</h2>
+                                <label class="labelForm" for="male">
+                                    <input type="radio" name="gender" data-checked="false" id="male" class="remove_input">
+                                    <span class="checkedInput"></span>
+                                    <p>Мужчина</p>
+                                </label>
+                                <label class="labelForm" for="female">
+                                    <input type="radio" name="gender" data-checked="false" id="female" class="remove_input">
+                                    <span class="checkedInput"></span>
+                                    <p>Женщина</p>
+                                </label>
+                                <label class="labelForm" for="noGender">
+                                    <input type="radio" name="gender" data-checked="false" id="noGender" class="remove_input">
+                                    <span class="checkedInput"></span>
+                                    <p>Я не определяю себя как М или Ж</p>
+                                </label>
+                            </div>
+                            <div class="quiz_block">
+                                <h2 class="title_element">Ваш стек</h2>
+                                <label class="labelForm" for="html">
+                                    <input type="checkbox" name="skill" id="html" class="remove_input">
+                                    <span class="checkedInput checkbox"></span>
+                                    <p>HTML</p>
+                                </label>
+                                <label class="labelForm" for="css">
+                                    <input type="checkbox" name="skill" id="css" class="remove_input">
+                                    <span class="checkedInput checkbox"></span>
+                                    <p>CSS</p>
+                                </label>
+                                <label class="labelForm" for="bootstrap">
+                                    <input type="checkbox" name="skill" id="bootstrap" class="remove_input">
+                                    <span class="checkedInput checkbox"></span>
+                                    <p>Bootstrap</p>
+                                </label>
+                                <label class="labelForm" for="js">
+                                    <input type="checkbox" name="skill" id="js" class="remove_input">
+                                    <span class="checkedInput checkbox"></span>
+                                    <p>JavaScript</p>
+                                </label>
+                                <label class="labelForm" for="git">
+                                    <input type="checkbox" name="skill" id="git" class="remove_input">
+                                    <span class="checkedInput checkbox"></span>
+                                    <p>Git</p>
+                                </label>
+                                <label class="labelForm"for="react">
+                                    <input type="checkbox" name="skill" id="react" class="remove_input">
+                                    <span class="checkedInput checkbox"></span>
+                                    <p>React</p>
+                                </label>
+                                <label class="labelForm" for="angular">
+                                    <input type="checkbox" name="skill" id="angular" class="remove_input">
+                                    <span class="checkedInput checkbox"></span>
+                                    <p>Angular</p>
+                                </label>
+                                <label class="labelForm" for="vue">
+                                    <input type="checkbox" name="skill" id="vue" class="remove_input">
+                                    <span class="checkedInput checkbox"></span>
+                                    <p>Vue</p>
+                                </label>
+                                <label class="labelForm" for="nodeJs">
+                                    <input type="checkbox" name="skill" id="nodeJs" class="remove_input">
+                                    <span class="checkedInput checkbox"></span>
+                                    <p>NodeJs</p>
+                                </label>
+                            </div>
+                            <div class="quiz_block">
+                                <label class="labelForm2" for="phone">
+                                    <h2 class="title_element">Ваш телефон</h2>
+                                    <input type="text" placeholder="Ваш телефон" name="contact" id="phone" class="input_frm" required>
+                                </label>
+                                <label class="labelForm2" for="email">
+                                    <h2 class="title_element">Ваш email</h2>
+                                    <input type="email" placeholder="Ваш email" name="contact" id="email" class="input_frm" required>
+                                </label>
+                                <div class="btnControlWr form_btn">
+                                    <button type="submit" class="btn" id="form_btn">Отправить</button>
+                                    <span></span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal_item-footer">
+                        <div class="quiz_blockControl">
+                            <div class="btnControlWr">
+                                <button type="button" class="btn btnPrev">Prev</button>
+                                <span></span>
+                            </div>
+                            <div class="btnControlWr">
+                                <button type="button" class="btn btnNext">Next</button>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--кастомный скрипт файл-->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
